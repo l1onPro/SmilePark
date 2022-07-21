@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="16dp">
+
+    <ImageView
+        android:id="@+id/rating_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/cicrle"
+        app:layout_constraintBottom_toTopOf="@+id/rating_dislike"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:tint="@color/green" />
+
+    <TextView
+        style="@style/Lead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_rectangle"
+        android:clickable="false"
+        android:focusable="false"
+        android:padding="8dp"
+        android:text="@string/rating_nice"
+        app:layout_constraintBottom_toBottomOf="@+id/rating_like"
+        app:layout_constraintEnd_toEndOf="@id/rating_like"
+        app:layout_constraintStart_toStartOf="@+id/rating_like"
+        app:layout_constraintTop_toTopOf="@id/rating_like" />
+
+    <ImageView
+        android:id="@+id/rating_dislike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/cicrle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rating_like"
+        app:tint="@color/yellow" />
+
+    <TextView
+        style="@style/Lead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_rectangle"
+        android:clickable="false"
+        android:focusable="false"
+        android:padding="8dp"
+        android:text="@string/rating_dislike"
+        app:layout_constraintBottom_toBottomOf="@+id/rating_dislike"
+        app:layout_constraintEnd_toEndOf="@id/rating_dislike"
+        app:layout_constraintStart_toStartOf="@+id/rating_dislike"
+        app:layout_constraintTop_toTopOf="@id/rating_dislike" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

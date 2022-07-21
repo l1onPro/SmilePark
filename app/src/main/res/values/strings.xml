@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">SmilePark</string>
+
+    <string name="ok" translatable="false">Ok</string>
+
+    <string name="title_home">Главная</string>
+    <string name="title_dashboard">Статистка</string>
+    <string name="title_setting">Настройки</string>
+
+    <string name="action_change">Изменить</string>
+    <string name="action_delete">Удалить</string>
+    <string name="action_save">Сохранить</string>
+    <string name="action_add">Добавить</string>
+
+    <string name="setting_menu_delete">Удалить</string>
+    <string name="setting_menu_change">Изменить</string>
+    <string name="setting_menu_about">О программе</string>
+
+    <string name="details_input_title">Введите название</string>
+    <string name="details_input_description">Введите описание</string>
+    <string name="details_message_valid_data">Проверьте, все ли поля заполнены</string>
+
+    <string name="rating_nice">Все круто</string>
+    <string name="rating_dislike">Так себе</string>
+    <string name="rating_message_title">Отзыв</string>
+    <string name="rating_message_text">Ваш отзыв учтен. Спасибо!</string>
+
+</resources>

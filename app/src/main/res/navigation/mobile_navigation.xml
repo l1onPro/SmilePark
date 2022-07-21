@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.smile.park.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/to_ratingFragment"
+            app:destination="@id/ratingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.smile.park.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/to_ratingDetailsFragment"
+            app:destination="@id/ratingDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.smile.park.ui.setting.SettingFragment"
+        android:label="@string/title_setting"
+        tools:layout="@layout/fragment_setting">
+
+        <action
+            android:id="@+id/to_detailsAttractionFragment"
+            app:destination="@id/detailsAttractionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsAttractionFragment"
+        android:name="com.smile.park.ui.details.DetailsAttractionFragment"
+        android:label=""
+        tools:layout="@layout/fragment_details">
+
+        <argument
+            android:name="attraction"
+            android:defaultValue="@null"
+            app:argType="com.smile.park.domain.models.Attraction"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ratingFragment"
+        android:name="com.smile.park.ui.rating.RatingFragment"
+        android:label=""
+        tools:layout="@layout/fragment_rating">
+
+        <argument
+            android:name="attraction"
+            app:argType="com.smile.park.domain.models.Attraction" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ratingDetailsFragment"
+        android:name="com.smile.park.ui.ratingdetails.RatingDetailsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_rating_details">
+
+        <argument
+            android:name="attraction"
+            app:argType="com.smile.park.domain.models.Attraction" />
+    </fragment>
+</navigation>
